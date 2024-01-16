@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Share Modal</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <div class="container">
+        <div class="img">
+          <img src="./assets/user-image.jpg" alt=""  />
+        </div>
+        <div class="name"><h2>Vikash yadav</h2></div>
+        <div class="position"><h3>Web Devloper | Frontend</h3></div>
+        <div class="bottom-group">
+          <button
+            onclick="openCard()"
+            class="btn-share btn-card"
+            id="share-btn"
+          >
+            <i class="fa-solid fa-share"></i>
+            <div>share my profile</div>
+          </button>
+          <button onclick="followopenCard()" class="follow-btn btn-card">
+            Follow Me
+          </button>
+        </div>
+      </div>
+      <!-- Share link section -->
+      <div class="modal">
+        <div class="header">
+          <h2>Share My Profile</h2>
+          <i onclick="closeCard()" class="fa-solid fa-xmark close"></i>
+        </div>
+        <div class="description">
+          <h3>Share this via</h3>
+        </div>
+        <div class="icon-container">
+          <a href="#" class="icon" id="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="icon" id="twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class="icon" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="icon" id="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="#" class="icon" id="telegram">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Follow Links section -->
+      <div class="follow">
+        <div class="header">
+          <h2>Link For Follow Me</h2>
+          <i onclick="followCardClose()" class="fa-solid fa-xmark close"></i>
+        </div>
+        <div class="icon-container">
+          <a href="#" class="icon" id="twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class="icon" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="icon" id="github">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="#" class="icon" id="linkedin">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- overlay section -->
+
+      <div class="overlay" onclick="closeCard()"></div>
+      <div class="followoverlay" onclick="followCardClose()"></div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/e623f0838a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
