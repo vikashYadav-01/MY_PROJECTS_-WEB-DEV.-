@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Wrraper -->
+    <div
+      class="w-[100vw] h-[100vh] flex flex-col justify-center items-center gap-5 bg-gray-900"
+    >
+      <div class="text-[30px] text-blue-600">Increment and Decrement</div>
+      <div class="flex gap-7 pa bg-white p-3 px-8 text-[30px] rounded-md shadow-sm shadow-white select-none font-bold">
+           <!-- positive button -->
+           <button onclick="increment()" class=" border-r-2 border-slate-400 pr-7" >+</button>
+           <!-- result-output -->
+           <div class="counter" id="counter">0</div>
+           <!-- negative button -->
+        <button class=" border-l-2 border-slate-400 pl-7" onclick="decrement()">-</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
