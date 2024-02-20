@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Password Generator</h2>
+      <div class="display-container">
+        <div class="input-container">
+          <input type="text" class="input-box" id="passBox" disabled />
+          <button class="copy-btn">
+            <i class="fa-regular fa-copy">
+              <p class="copyContentBtn"></p>
+            </i>
+          </button>
+        </div>
+
+        <!-- slider section -->
+        <div class="slider-container">
+          <input type="range" min="0" max="20" class="slider" id="slider" />
+          <p class="slider-count">0</p>
+        </div>
+
+        <!-- checkbox section  -->
+
+        <div class="check-box-container">
+          <div>
+            <input type="checkbox" name="checkbox" id="uppercase" />
+            <label for="uppercase">Includes Uppercase Letter</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" id="lowercase" />
+            <label for="lowercase">Includes Lowercase Letter</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" id="numbers" />
+            <label for="numbers">Includes Numbers</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" id="symbols" />
+            <label for="symbols">Includes Symbols</label>
+          </div>
+        </div>
+
+        <!-- password-strength section -->
+
+        <div class="strength-container">
+          <p class="strength-text">Strength</p>
+          <div class="strength-color"></div>
+        </div>
+
+        <!-- submite btns -->
+
+        <div class="btn">
+          <button id="generateBtn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/e623f0838a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

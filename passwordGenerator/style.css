@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: white;
+}
+
+.container {
+    
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right bottom, #1f0e08 , #064751);
+}
+
+.container h2{
+     margin-bottom: 40px;
+     font-size: 3rem;
+     text-shadow: 3px 3px 10px rgb(165, 87, 3) , 3px 3px 20px green;
+}
+
+.display-container {
+     position: relative;
+     height: 350px;
+     width: 350px;
+     max-width: 350px;
+     background: #eeeeee1a;
+     border-radius: 15px;
+     color: #ffffff;
+     padding: 50px 40px;
+     box-shadow: 3px 3px 10px rgb(165, 87, 3) , 3px 3px 20px green;
+}
+.input-container{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-block: 10px;
+}
+.input-box{
+     width: 330px;
+     height: 30px;
+     outline: none;
+}
+
+.copy-btn{
+     height: 30px;
+     width: 30px;
+     background: transparent;
+     border: none;
+
+}
+
+.copy-btn i{
+     font-size: 25px;
+     padding-left: 17px;
+     color: rgb(216, 63, 3);
+     font-weight: bolder;
+     cursor: pointer;
+}
+
+/* .copy-btn-hover{
+     position: absolute;
+     top: 40px;
+     right: 27px;
+     font-size: 14px;
+     scale: 0;
+     transition: all ease-in 0.2s;
+     color: rgb(216, 63, 3);
+
+     
+} */
+
+.copy-btn:hover .copy-btn-hover{
+     scale: 1;
+}
+
+
+
+/* slider styling */
+
+.slider-container{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.slider{
+     width: 330px;
+     cursor: pointer;
+     
+}
+
+.slider-count{
+     font-size: 20px;
+     margin-block: 10px;
+     user-select: none;
+
+}
+
+/* checkbox styling */
+
+.check-box-container{
+     display: flex;
+     flex-direction: column;
+     line-height: 40px;
+     user-select: none;
+}
+
+.check-box-container input{
+     width: 20px;
+     height: 20px;
+     cursor: pointer;
+}
+.check-box-container label{
+     font-size: 25px;
+     cursor: pointer;
+}
+
+.strength-container{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.strength-text{
+     font-size: 25px;
+}
+
+.strength-color{
+     height: 20px;
+     width: 20px;
+     background-color: green;
+     border-radius: 50%;
+}
+
+.btn{
+     text-align: center;
+}
+
+.btn button{
+     padding: 6px 80px;
+     font-size: 20px;
+     color: black;
+     margin-block: 10px;
+     border-radius: 10px;
+     border: none;
+     margin-top: 20px;
+     scale: 1;
+     transition: all ease-in 0.2s;
+     cursor: pointer;
+}
+
+.btn button:hover{
+     scale: 0.97;
+     background-color: rgb(220, 106, 5);
+     color: white;
+}
